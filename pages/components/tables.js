@@ -33,7 +33,7 @@ export default function Table( {table_head, table_body}) {
     }
 
     function handlerEnter(event){
-        if(isQuery && textQuery==='') {
+        if(textQuery==='') {
             getWarranties()
             setIsQuery(false)
         }
