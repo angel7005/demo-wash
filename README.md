@@ -20,6 +20,10 @@ url: http://localhost:3000/
 
 3-Hacerlo responsive.
 
+4-Registro  de usuario
+
+5-Gestion de usuario
+
 
 
 
