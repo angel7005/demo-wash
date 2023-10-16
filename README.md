@@ -11,6 +11,7 @@ En el archivo .env.local se cambian los parametros de configuracion para la cone
 
 2-Consulta de las garantias: Es un form multi-step, se introduce el numero de serie,
 se muestra un countdown con los dias:horas:minutos:segundos que quedan de garantia. 
+url: http://localhost:3000/
 
 ## Funcionalidades por hacer
 1-Refactorizar codigo, eliminar archivos que se crearon para probar.
