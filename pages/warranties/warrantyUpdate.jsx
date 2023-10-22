@@ -46,7 +46,7 @@ export default function WarrantyUpdate() {
   async function getWarranty()  { 
       let waranty = {};
 
-      axios("http://localhost:3000/api/warranty?id="+idWarranty)
+      axios("/api/warranty?id="+idWarranty)
           .then((res) => {               
               waranty = res.data.warranty;
               warrantySerialNumberToUpdateRef.current.value=waranty.serial_number;

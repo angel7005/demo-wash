@@ -25,7 +25,7 @@ export default function WarrantySearch() {
  	async function getWarranty(sn) {
  		console.log("page.getWarranty,,,,")
  		console.log(sn)
-    	axios('http://localhost:3000/api/warranty?serial_number='+sn)
+    	axios('/api/warranty?serial_number='+sn)
           .then((res) => {                             
               if(!res.data.warranty){
 								setFormStep(2)

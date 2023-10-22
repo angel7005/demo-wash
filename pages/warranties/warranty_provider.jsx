@@ -17,7 +17,7 @@ const WarrantyProvider = (props) => {
    const [deletedError, setDeletedError] = useState(false);
       
    async function getWarranties() {
-      axios("http://localhost:3000/api/warranty")
+      axios("/api/warranty")
           .then((res) => {               
               setWarranties(res.data.warranties);
           })
