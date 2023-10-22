@@ -59,7 +59,7 @@ export default function Table( {table_head, table_body}) {
     function render(){
         return (
             <div className="flex flex-col">
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto h-screen">
                 <div className="py-3 pl-2 mx-2" >
                         
                         <div className="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-1 
@@ -118,9 +118,9 @@ export default function Table( {table_head, table_body}) {
 
                     </div>
 
-                <div className="p-1.5 w-full inline-block align-middle">
-                    <div className="overflow-hidden border rounded-lg">
-                        <table className="min-w-full divide-y divide-gray-200">
+                <div className="p-1.5 w-full inline-block align-middle overflow-x-auto">
+                    <div className="overflow-x-auto border rounded-lg">
+                        <table className="divide-y divide-gray-200">
                             {table_head}
                             {table_body}
                         </table>
