@@ -43,6 +43,10 @@ li.active {
   @apply text-white block p-3 font-bold hover:text-yellow-500
 }
 
+.themegrad{
+  @apply bg-gradient-to-r from-cyan-500 to-blue-500
+}
+
 .button1{
   @apply border-4 border-yellow-400 text-white font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500
 }
