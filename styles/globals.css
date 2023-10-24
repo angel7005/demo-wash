@@ -44,7 +44,7 @@ li.active {
 }
 
 .themegrad{
-  @apply bg-gradient-to-r from-cyan-500 to-blue-500
+  @apply bg-gradient-to-r from-blue-100 to-blue-300
 }
 
 .button1{
@@ -52,13 +52,17 @@ li.active {
 }
 
 .list {
-  @apply ml-4   
+  @apply ml-4 text-2xl
+}
+
+.list {
+  list-style-type: number
 }
 
 .list1{
-  list-style-type: square;
+  list-style-type: circle;
 }
 
 .list2{
-  list-style-type: decimal;
+  list-style-type: square;
 }
