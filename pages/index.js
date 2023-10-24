@@ -9,15 +9,14 @@ import WarrantySearh from '../components/warrantysearch.jsx'
 const  TermineContract = () => {
 	return (
 			<div className="min-h-screen h-screen themegrad
-						grid grid-cols-3 gap-2 w-3/3
-			            bg-blue-100 antialiased relative">		  
+						grid grid-cols-3 gap-2 w-3/3 h-full">		  
 				<div className="text-center col-span-3"><Header/></div>
 				
-				<div className="text-center col-span-3 mx-5 ">
+				<div className="flex col-span-3 mx-5 h-full items-center justify-end">
 					<div className="text-left">
 					 <lu>
-						<li className="list ">
-						    <a className="text-2xl">If in the first 30 days you bought the washer or dryer or the set (washer and dryer)</a> 
+						<li className="list mt-3">
+						    <a className="text-2xl">- If in the first 30 days you bought the washer or dryer or the set (washer and dryer)</a> 
 						    <lu>
 						     <li className="list list1">
 						     	If any We will agree with you to schedule the day and time that we can come to your home to fix the problem,
@@ -32,8 +31,8 @@ const  TermineContract = () => {
 							 	if you came to my business to buy and pick up the machine, you must bring the equip ent to give a solution.</li>
 							</lu>								    
 						</li>
-						<li className="list">
-      						<a className="text-2xl">Only for customers who did not request our delivery service</a>
+						<li className="list mt-3">
+      						<a className="text-2xl">- Only for customers who did not request our delivery service</a>
       						<lu>
       							<li className="list list1">If you cannot come to our business due to any inconvenience that may arise, 
       								you can inform our staff of your situation, in which case we can come to your house 
@@ -52,7 +51,7 @@ const  TermineContract = () => {
       								you will not have to pay any  cost as long as it is within the warranty time.</li>      						
 							</lu>      						
       					</li>
-      					<li className="list"><a className="text-2xl">For ALL CLIENTS IN GENERAL</a>
+      					<li className="list mt-3"><a className="text-2xl">- For ALL CLIENTS IN GENERAL</a>
       					  <lu>
       					     <li className="list list1"> During that Warranty period, you will not have to pay any repair costs if machine has a technical failure </li>
       					     <li className="list  list1"> We are only responsible for technical damage to the machine
@@ -64,7 +63,9 @@ const  TermineContract = () => {
       								<li className="list list2">We do not accept returns on any appliance. </li>      							      
       							</lu>
       						 </li>
-							 <li className="list"><a className="text-2xl">The warranty only covers technical failures of the washer or dryer.</a> 
+      					   </lu>
+    				    </li>
+						<li className="list mt-3"><a className="text-2xl">- The warranty only covers technical failures of the washer or dryer.</a> 
 							 	<lu>
 							 	  <li className="list list1">Make sure that the connectors and their electricity are in good condition and that the 220V plug is with the correct volts 
 							 	 	so as not to cause damage to the dryer.</li>
@@ -73,8 +74,7 @@ const  TermineContract = () => {
 							 	    <li className="list list1">Also make sure the drain is not clogged that way you will avoid damaging the washer.</li>
 							 	</lu>
 							 </li>      							       						 
-    				      </lu>
-    				    </li>
+    				      
     				  </lu>
 					  	
 					  <div className="flex justify-center mt-6 text-2xl">Thank you for your purchase, we are here to serve you!</div>			

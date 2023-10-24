@@ -93,7 +93,7 @@ export default function Table( {table_head, table_body}) {
                                     type="text"
                                     name="hs-table-search"
                                     id="hs-table-search"
-                                    className="block w-full p-3 mr-2 pl-10 text-sm border-gray-200 rounded-md 
+                                    className="block w-full p-3 mx-4 pl-10 pr-10 text-sm border-gray-200 rounded-md 
                                             focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 
                                             dark:border-gray-700 dark:text-gray-400"
                                     placeholder="Search..."
