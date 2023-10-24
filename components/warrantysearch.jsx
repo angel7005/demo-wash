@@ -1,3 +1,4 @@
+"use client";
 import axios from 'axios';
 import React ,{useRef, useState} from 'react'
 import {useForm} from "react-hook-form"
@@ -62,8 +63,7 @@ export default function WarrantySearch() {
 							disabled={!isValid}
 							onClick={completeFormStep}
 							type="button"
-							className="flex my-10 py-2 px-10 border-2 border-black
-										text-center text-white rounded bg-blue-700 
+							className="flex my-10 py-2 px-10 border-2 button1 
 										disabled:bg-gray-400 disabled">
 				  		Search
 					</button>
@@ -76,8 +76,7 @@ export default function WarrantySearch() {
 						disabled={!isValid}
 						onClick={completeFormStep}
 						type="button"
-						className="flex my-10 py-2 px-10 border-2 border-black
-										text-center text-white rounded bg-blue-700">
+						className="flex my-10 py-2 px-10 bg-blue-700 button1">
 				  			Previous
 					</button>																	
 			)		
@@ -99,15 +98,15 @@ export default function WarrantySearch() {
 				}
 				else {
 					return (
-						<p>Warranty available by (dd:hh:mm:ss) {' '}
-							<CountdownTimer targetDate={dateTimeAfterThreeDays} />
+						<p>Warranty time available in days:hh:mm:ss by: {' '}
+							<CountdownTimer targetDate={dateTimeAfterThreeDays}  />
 						</p>)
 					//return( <p>Available {wrt*-1} day(s) of warranty. Was {warranty.days_warranty} days</p>)
 				}		
 	}
 
 	return(		
-	       <div className="max-w-xl w-full mt-4 mb-4 mx-auto rounded-lg shadow-2xl bg-gray-200
+	       <div className="max-w-xl w-full mt-4 mb-4 mx-auto rounded-lg shadow-2xl themegrad1
 	       								 overflow-hidden z-10 ">
 	          <div className="px-2 py-2">
 	            <form >
@@ -161,12 +160,17 @@ export default function WarrantySearch() {
 	              	</div>	              		              	
 	              	<div className="flex justify-left mt-2">
 	              		<label className="font-semibold text-justify pr-3"> Date of sale: </label>
-	              		<p>{warranty?.date_sale}</p>
+	              		<p>{(new Date(warranty?.date_sale))?.toLocaleDateString(undefined,{
+	              				weekday: 'long',
+	              				year:'numeric',
+	              				month: 'numeric',
+	              				day: 'numeric'
+	              			})}</p>
 	              	</div>
-	              	<div className="flex justify-left mb-2 mr-4">
+	              	<div className="flex justify-left mb-2 mr-4 mt-3">
 	              		<label className="font-semibold text-1x"> Days of warranty: </label>	              		
 	              		              		
-	              		<span className="pl-3">
+	              		<span className="pl-1">
 	              			{ renderWarranty() } 
 	              			</span>	              		
 	              	</div>              		              

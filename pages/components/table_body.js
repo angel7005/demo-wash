@@ -20,7 +20,14 @@ export default function Table_Body( {body_rows_data} ){
             keys?.map( (k) => {
                             return(
                                <td className="px-6 py-4 text-sm font-normal text-left text-gray-800 whitespace-nowrap" >
-                                   {col[k]}
+                                 {
+                                    k==='date_sale' ? ((new Date(col[k]))?.toLocaleDateString(undefined,{
+                                                        weekday: 'long',
+                                                        year:'numeric',
+                                                        month: 'numeric',
+                                                        day: 'numeric'
+                                                       })) 
+                                                    : col[k]}
                                </td>  
                             )                            
                 }

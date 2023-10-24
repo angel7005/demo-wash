@@ -8,7 +8,7 @@ import WarrantySearh from '../components/warrantysearch.jsx'
 
 const  TermineContract = () => {
 	return (
-			<div className="min-h-screen h-screen themegrad
+			<div className="themegrad
 						grid grid-cols-3 gap-2 w-3/3 h-full">		  
 				<div className="text-center col-span-3"><Header/></div>
 				

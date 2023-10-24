@@ -4,10 +4,11 @@ const  Header = () => {
 	return (		
 		<div className="bg-gray-500">
 			<nav className="flex justify-between ">
-				<div className="logo p-2"> 					
-					<p className="text-4xl  text-red-400">
-					 	Washer and dryer <a className="text-blue-700 font-bold text-5xl">Rents</a>
+				<div className="logo p-2 items-top"> 					
+					<p className="xl:text-4xl lg:text-2xl md:text-2xl sm:text-2xl  text-red-400">
+					 	Washer and dryer 
 					</p>
+					<p className="pl-2 text-blue-700 font-bold text-5xl">Rents</p>
 				</div>
 				<div className="block flex justify-end  " > 				    
 					<ul className="menu flex items-center justify-end" >						
