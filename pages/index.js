@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 
 import Header from "./components/header.js"
@@ -15,7 +17,7 @@ const  TermineContract = () => {
 					<div className="text-left">
 					 <lu>
 						<li className="list">
-						    <a className="text-2xl">If in the first 30 days you bought the washer or dryer or the set (washer and dryer)</a> 
+						    <p className="text-2xl">If in the first 30 days you bought the washer or dryer or the set (washer and dryer)</p> 
 						    <lu>
 						     <li className="list list1">
 						     	If any We will agree with you to schedule the day and time that we can come to your home to fix the problem,
@@ -31,17 +33,17 @@ const  TermineContract = () => {
 							</lu>								    
 						</li>
 						<li className="list">
-      						<a className="text-2xl">Only for customers who did not request our delivery service</a>
+      						<p className="text-2xl">Only for customers who did not request our delivery service</p>
       						<lu>
       							<li className="list list1">If you cannot come to our business due to any inconvenience that may arise, 
       								you can inform our staff of your situation, in which case we can come to your house 
       								if it is within the mileage limit that we provide (from 1 to 25 miles).   
       								must cover the cost of fuel to repair the device that is presenting the technical failure 
-      								<a className="font-bold"> In this case, the fuel is paid by the customer </a>who did not request our delivery service since it is a service that is far from the cost of the sale made to unless the publication where you saw the publication of the appliance you bought offers 
+      								<p className="font-bold"> In this case, the fuel is paid by the customer </p>who did not request our delivery service since it is a service that is far from the cost of the sale made to unless the publication where you saw the publication of the appliance you bought offers 
       									delivery and installation included in the price that was made in the publication.
       							  </li>
       							<li className="list list1"> Remember that our publication is clear and said delivery and installation promotion
-      							  <a className="font-bold"> only applies in San Antonio.</a></li>
+      							  <p className="font-bold"> only applies in San Antonio.</p></li>
       							<li className="list list1"> If the Appliance at the time of closing the purchase was sold at a lower price,
       							   the Delivery and Installation Promotion is automatically eliminated since it has been sold at a 
       							   lower price than the original price (the customer who paid the shipping is exempt from this policy since that, 
@@ -50,7 +52,7 @@ const  TermineContract = () => {
       								you will not have to pay any  cost as long as it is within the warranty time.</li>      						
 							</lu>      						
       					</li>
-      					<li className="list"><a className="text-2xl">For ALL CLIENTS IN GENERAL</a>
+      					<li className="list"><p className="text-2xl">For ALL CLIENTS IN GENERAL</p>
       					  <lu>
       					     <li className="list list1"> During that Warranty period, you will not have to pay any repair costs if machine has a technical failure </li>
       					     <li className="list  list1"> We are only responsible for technical damage to the machine
@@ -62,7 +64,7 @@ const  TermineContract = () => {
       								<li className="list list2">We do not accept returns on any appliance. </li>      							      
       							</lu>
       						 </li>
-							 <li className="list"><a className="text-2xl">The warranty only covers technical failures of the washer or dryer.</a> 
+							 <li className="list"><p className="text-2xl">The warranty only covers technical failures of the washer or dryer.</p> 
 							 	<lu>
 							 	  <li className="list list1">Make sure that the connectors and their electricity are in good condition and that the 220V plug is with the correct volts 
 							 	 	so as not to cause damage to the dryer.</li>
