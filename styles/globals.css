@@ -38,3 +38,23 @@ li.active {
   background-color: skyblue;
   color: white;
 }
+
+.link {
+  @apply text-white block p-3 font-bold hover:text-yellow-500
+}
+
+.button1{
+  @apply border-4 border-yellow-400 text-white font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500
+}
+
+.list {
+  @apply ml-4   
+}
+
+.list1{
+  list-style-type: square;
+}
+
+.list2{
+  list-style-type: decimal;
+}

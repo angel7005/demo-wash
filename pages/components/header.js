@@ -1,21 +1,21 @@
+
+
 const  Header = () => {
-	return (
-		<div className="flex justify-center bg-gray-300">
-			<div className="mx-4 my-2 order-last">
-			
-			</div>
-			<div className="mx-4 self-center text-center">
-				<h1 className="text-6xl font-bold text-blue-800">
-					Query your warranty
-				</h1>
-				<h2 className="text-3xl font-semibold text-blue-300">
-					Register your product to validate your purchase date...
-				</h2>
-				
-			
-			</div>			
-	
-		</div>		
+	return (		
+		<div className="flex  justify-end bg-gray-500">
+			<nav className="flex justify-end ">
+				<div className="logo p-2 w/2"> 
+					
+				</div>
+				<div className="block" > 				    
+					<ul className="menu flex items-right" >						
+ 						<li><a href="/" className="link">Home</a></li>
+						<li><a href="/warranties/search" className="link">Search</a></li>
+						<li><a href="/warranties/warranty" className="link">Admin</a></li>
+					</ul>
+				</div>				
+			</nav>					
+		</div>			
 	)
 }
 

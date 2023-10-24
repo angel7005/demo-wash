@@ -60,9 +60,9 @@ export default function Table( {table_head, table_body}) {
         return (
             <div className="flex flex-col">
             <div className="overflow-x-auto h-screen">
-                <div className="py-3 pl-2 mx-2" >
+                <div className="py-3 pl-2 mx-2 w-full" >
                         
-                        <div className="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-1 
+                        <div className="w-full flex flex-col md:flex-row space-y-2 md:space-y-1 
                                     items-stretch md:items-right justify-end md:space-x-3 flex-shrink-1 mx-2">
 
                             <button type="button" id="createProductModalButton" 
@@ -120,7 +120,7 @@ export default function Table( {table_head, table_body}) {
 
                 <div className="p-1.5 w-full inline-block align-middle overflow-x-auto">
                     <div className="overflow-x-auto border rounded-lg">
-                        <table className="divide-y divide-gray-200">
+                        <table className="divide-y divide-gray-200 w-full">
                             {table_head}
                             {table_body}
                         </table>
