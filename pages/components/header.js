@@ -4,8 +4,7 @@ const  Header = () => {
 	return (		
 		<div className="flex  justify-end bg-gray-500">
 			<nav className="flex justify-end ">
-				<div className="logo p-2 w/2"> 
-					
+				<div className="logo p-2 w/2"> 					
 				</div>
 				<div className="block" > 				    
 					<ul className="menu flex items-right" >						
