@@ -7,7 +7,7 @@ export default function Table_Head( {head_colums} ){
         	{
         		head_colums?.map((item_col) => {
                 		return(
-                			<th scope="col" 
+                			<th key={item_col} scope="col" 
                             type={{'width': item_col==='DAYS OF WARRANTY' ? '10%' : '16%'}}
                             className="px-6 py-3  font-bold text-center text-left text-gray-500 uppercase"> 
                 				{item_col} 

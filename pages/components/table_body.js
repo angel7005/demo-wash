@@ -19,7 +19,7 @@ export default function Table_Body( {body_rows_data} ){
         return(
             keys?.map( (k) => {
                             return(
-                               <td className="px-6 py-4 text-sm font-normal text-left text-gray-800 whitespace-nowrap" >
+                               <td key={k} className="px-6 py-4 text-sm font-normal text-left text-gray-800 whitespace-nowrap" >
                                  {
                                     k==='date_sale' ? ((new Date(col[k]))?.toLocaleDateString(undefined,{
                                                         weekday: 'long',
@@ -39,7 +39,7 @@ export default function Table_Body( {body_rows_data} ){
 			    { 
                  body_rows_data?.map((item_row) => {                 
 			     return(
-                    <tr>
+                    <tr key={ item_row['id'] }>
                          <td className="px-6 py-4 font-medium
                                         text-sm  text-gray-800 
                                         whitespace-nowrap">
