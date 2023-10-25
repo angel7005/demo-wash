@@ -76,7 +76,7 @@ export default function WarrantySearch() {
 						disabled={!isValid}
 						onClick={completeFormStep}
 						type="button"
-						className="flex my-10 py-2 px-10 bg-blue-700 button1">
+						className="flex my-10 py-2 px-10  button1">
 				  			Previous
 					</button>																	
 			)		
