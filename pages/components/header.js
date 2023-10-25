@@ -5,10 +5,10 @@ const  Header = () => {
 		<div className="bg-gray-500">
 			<nav className="flex justify-between ">
 				<div className="logo p-2 items-top"> 					
-					<p className="xl:text-4xl lg:text-2xl md:text-2xl sm:text-2xl  text-red-400">
-					 	Washer and dryer 
+					<p className="xl:text-4xl lg:text-2xl md:text-2xl sm:text-2xl  text-red-300">
+					 	Washing and dryer 
 					</p>
-					<p className="pl-2 text-blue-700 font-bold text-5xl">Rents</p>
+					<p className="pl-2 text-blue-500 font-bold text-4xl">Rentals</p>
 				</div>
 				<div className="block flex justify-end  " > 				    
 					<ul className="menu flex items-center justify-end" >						
