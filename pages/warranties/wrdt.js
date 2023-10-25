@@ -72,14 +72,15 @@ const  WarrantyTable = () => {
 					<Header/>
 				</div>					
 				
-				<div className="text-center col-span-3 ">				 
+				<div className="text-center col-span-3 h-full ">	
+				 
 					<Table
 	    				table_head={<TableHead head_colums={['id','serial number','model','Date of sale', 'Days of warranty',]} />}
 	    				table_body={<TableBody body_rows_data={getWarrantiesRow()}/>}
 						>
 					</Table>				
 					<br/>
-					<div className="pagination"> 
+					<div className="pagination mt-auto bg-gray-200"> 
 	            			<Pagination 
 	               				activePage={ activePage } 
 	               				itemsCountPerPage={ pageSize } 
@@ -90,7 +91,8 @@ const  WarrantyTable = () => {
 	               				linkClass="page-link"
 	            			/> 
          				</div> 
-				</div>									
+				  </div>
+				
 				<br/>	
 				<div className="text-center col-span-3">
 					<Footer>						

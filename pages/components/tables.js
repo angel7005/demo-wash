@@ -58,9 +58,9 @@ export default function Table( {table_head, table_body}) {
 
     function render(){
         return (
-            <div className="flex flex-col">
-            <div className="h-screen">
-                <div className="py-3  mx-2  " >
+            <div className="flex flex-col w-full">
+            <div className="min-h-screen">
+                <div className="py-3  mx-2 " >
                         
                         <div className="flex flex-col md:flex-row space-y-2 md:space-y-1 
                                     items-stretch md:items-right justify-end md:space-x-3 flex-shrink-1 mx-2">
@@ -83,7 +83,7 @@ export default function Table( {table_head, table_body}) {
                                 Add product
                             </button>
 
-                            <div className="relative mx-1" >
+                            <div className=" relative mx-4" >
                                 <label htmlFor="hs-table-search" className="sr-only">
                                     Search
                                 </label>
@@ -91,11 +91,11 @@ export default function Table( {table_head, table_body}) {
                                     type="text"
                                     name="hs-table-search"
                                     id="hs-table-search"
-                                    className="block p-3 pl-10 text-sm border-gray-200 rounded-md 
+                                    className="w-full p-3 pl-10 text-sm border-gray-200 rounded-md 
                                             focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 
-                                            dark:border-gray-700 dark:text-gray-400"
-                                    placeholder="Search..."
-                                    onKeyPress={handlerEnter}                                   
+                                            dark:border-gray-700 dark:text-gray-400 lowercase"
+                                    placeholder="Search by serial number..."
+                                    onKeyPress={handlerEnter}
                                     onChange={(event) => {setTextQuery(event.target.value)}}
                                 />
                                 <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
@@ -105,17 +105,16 @@ export default function Table( {table_head, table_body}) {
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        viewBox="0 0 16 16"                                         
-                                    >
+                                        viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                                     </svg>
-                                </div>
-                            </div>
+                                </div>                            
+				            </div>
                         </div>
 
-                    </div>
+                </div>
 
-                <div className="p-1.5 align-middle overflow-auto mx-2" >
+                <div className="p-1.5 align-middle overflow-auto" >
 
                     <div className="overflow-auto border rounded-lg">
                         <table className="w-full divide-y divide-gray-200 border">
