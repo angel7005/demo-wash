@@ -1,5 +1,4 @@
 
-
 const  Header = () => {
 	return (		
 		<div className="bg-gray-700">
@@ -10,7 +9,7 @@ const  Header = () => {
 					</p>
 					<p className="pl-2 text-blue-300 font-bold text-4xl">Rentals</p>
 				</div>
-				<div className="block flex justify-end  " > 				    
+				<div className="mr-2 block flex justify-end  " > 				    
 					<ul className="menu flex items-center justify-end" >						
  						<li><a href="/" className="link" > Waranty </a></li>
  						<li><a href="/warranties/search" className="link">Search</a></li>

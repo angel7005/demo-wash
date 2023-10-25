@@ -30,8 +30,7 @@
 .page-item, .page-link {
   margin: 5px 5px;
   border-style: solid;
-  border-color: gray;  
-  #transform: rotate(-90deg);
+  border-color: gray;    
 }
 
 li.active {
@@ -77,4 +76,8 @@ li.active {
 
 .list2{
   list-style-type: square;
+}
+
+xx* {
+  outline: 1px solid red;
 }

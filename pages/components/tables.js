@@ -59,15 +59,13 @@ export default function Table( {table_head, table_body}) {
     function render(){
         return (
             <div className="flex flex-col">
-            <div className="overflow-x-auto h-screen">
-                <div className="py-3 pl-2 mx-2 w-full h-auto" >
+            <div className="h-screen">
+                <div className="py-3  mx-2  " >
                         
-                        <div className="w-full flex flex-col md:flex-row space-y-2 md:space-y-1 
+                        <div className="flex flex-col md:flex-row space-y-2 md:space-y-1 
                                     items-stretch md:items-right justify-end md:space-x-3 flex-shrink-1 mx-2">
 
                             <button type="button" id="createProductModalButton" 
-                                    data-modal-target="createProductModal" 
-                                    data-modal-toggle="createProductModal" 
                                     className="flex items-center justify-center text-black
                                     bg-blue-600 hover:bg-blue-800 focus:ring-4 text-white
                                     focus:ring-black-800 font-medium rounded-lg text-sm 
@@ -93,7 +91,7 @@ export default function Table( {table_head, table_body}) {
                                     type="text"
                                     name="hs-table-search"
                                     id="hs-table-search"
-                                    className="block w-full p-3 mx-4 pl-10 pr-10 text-sm border-gray-200 rounded-md 
+                                    className="block p-3 pl-10 text-sm border-gray-200 rounded-md 
                                             focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 
                                             dark:border-gray-700 dark:text-gray-400"
                                     placeholder="Search..."
@@ -115,12 +113,12 @@ export default function Table( {table_head, table_body}) {
                             </div>
                         </div>
 
-
                     </div>
 
-                <div className="p-1.5 w-full h-auto inline-block align-middle overflow-auto">
+                <div className="p-1.5 align-middle overflow-auto mx-2" >
+
                     <div className="overflow-auto border rounded-lg">
-                        <table className="divide-y divide-gray-200 w-full h-auto">
+                        <table className="w-full divide-y divide-gray-200 border">
                             {table_head}
                             {table_body}
                         </table>

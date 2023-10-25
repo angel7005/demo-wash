@@ -67,7 +67,7 @@ const  WarrantyTable = () => {
 	    }, [created,updated,deleted]);
 
 	return (
-			<div className="min-h-screen h-screen gap-2 relative">		  
+			<div className="min-h-screen gap-2">		  
 				<div className="text-center col-span-3">
 					<Header/>
 				</div>					
