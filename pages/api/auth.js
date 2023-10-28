@@ -1,5 +1,5 @@
-import { databaseServiceFactory } from '../../services/databaseService';
-import { authServiceFactory } from '../../services/authService';
+import databaseServiceFactory  from '../../services/databaseService';
+import authServiceFactory from '../../services/authService';
 import withSession from '../../lib/session';
 import bcrypt from "bcryptjs";
 

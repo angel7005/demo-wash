@@ -9,6 +9,9 @@ const userServiceFactory = () =>{
 	return {login};
 }
 
+/*
 module.exports = {
 	userServiceFactory
 };
+*/
+export default userServiceFactory;

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { userServiceFactory } from '../../services/userService';
+import userServiceFactory  from '../../services/userService';
 import useUser from './useUser';
 
 const userService = userServiceFactory();
