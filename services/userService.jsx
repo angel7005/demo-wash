@@ -1,17 +1,17 @@
 import axios from 'axios';
 
-const userServiceFactory = () =>{
-
-	function login(username,password) {
+const userServiceFactory = () => {
+	function login(username, password) {
 		return axios.post('/api/auth',{ username, password })
 	}
 
 	return {login};
 }
 
-/*
+
 module.exports = {
 	userServiceFactory
 };
-*/
-export default userServiceFactory;
+
+
+export default 	userServiceFactory ;

@@ -1,6 +1,6 @@
-import bcrypt from "bcryptjs"
+import * as bcrypt from "bcryptjs"
 
-export default function authServiceFactory (){
+const authServiceFactory = () => {
 	const validate = async(password, dbPassword) => {		
 		return await bcrypt.compare(password, dbPassword);
 	};
@@ -8,6 +8,6 @@ export default function authServiceFactory (){
 	return {validate};
 }
 
-/*module.exports = {
+module.exports = {
 	authServiceFactory
-}*/
+}

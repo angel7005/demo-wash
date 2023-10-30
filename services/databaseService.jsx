@@ -10,7 +10,7 @@ const knex = require('knex')({
 });
 
 
-export default function databaseServiceFactory() {
+const databaseServiceFactory = () => {
 	const TABLE = 'user';
 
 	const getUser = async (username) => {
@@ -24,6 +24,6 @@ export default function databaseServiceFactory() {
 	return {getUser};
 }
 
-/*module.exports = {
+module.exports = {
 	databaseServiceFactory
-};*/
+};
