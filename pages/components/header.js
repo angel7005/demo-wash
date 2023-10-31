@@ -12,7 +12,7 @@ const  Header = () => {
 				<div className="mr-2 block flex justify-end  " > 				    
 					<ul className="menu flex items-center justify-end" >						
  						<li><a href="/" className="link" > Waranty </a></li>
- 						<li><a href="/warranties/search" className="link">Search</a></li>
+ 						<li><a href="/warranties/search1" className="link">Search</a></li>
 						<li><a href="/warranties/warranty" className="link">Admin</a></li>
 					</ul>
 				</div>				

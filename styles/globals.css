@@ -78,6 +78,10 @@ li.active {
   list-style-type: square;
 }
 
+.countdown {
+  @apply font-bold mt-2 px-2 text-3xl text-blue-700 bg-gray-800 rounded
+}
+
 ccc* {
   outline: 1px solid red;
 }
@@ -85,3 +89,5 @@ ccc* {
 .ctlForm {
   @apply shadow appearance-none border rounded w-full py-2 px-1 text-left my-1
 }
+
+
