@@ -103,11 +103,11 @@ export default function WarrantySearch() {
 	       								 overflow-hidden z-10 ">
 	       		<div>
 	       				<section className="block">
-	                 <h2 className="font-semibold text-3xl mt-4 mb-8 text-center">
-	                   Enter your serial number	                
+	                 <h2 className="font-semibold text-3xl my-2  text-center">
+	            		   Your warranty	                
 	                 </h2>
 	                 
-	                 <div className=" relative mx-4" >                                
+	                 <div className=" relative m-4" >                                
                                 <input
                                     type="text"
                                     name="hs-table-search"
@@ -136,11 +136,8 @@ export default function WarrantySearch() {
 	          <div className="px-2 py-2">
 	            <form >             	              
 	              	<section className="block">	              	
-	              		<h2 className="font-semibold text-3xl mt-4 mb-8 text-center">
-	                		Your warranty	                
-	              		</h2>	              		              		              	
-	              				{ getWarranty()  } 	              			
-				   				</section>             	             
+	            		{ getWarranty()  } 	              			
+				    </section>             	             
 	            </form>
 	          </div>
 	       </div>		

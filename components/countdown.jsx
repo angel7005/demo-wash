@@ -32,14 +32,14 @@ const ShowCounter = ({ days='30', hours='59', minutes='59', seconds='59' }) => {
           <p className="countdown">
               {minutes.toString().padStart(2,'0')}
           </p>
-          <p>Min.</p>
+          <p>minutes</p>
       </div>
       <p className="flex items-center text-2xl pb-5">:</p>
       <div className="y-divide">        
           <p className="countdown">
               {seconds.toString().padStart(2,'0')}
           </p>
-          <p>Seg.</p>
+          <p>Seconds</p>
       </div>
     </div>
   );

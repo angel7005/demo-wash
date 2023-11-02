@@ -38,6 +38,11 @@ li.active {
   color: white;
 }
 
+.menu_li {
+  @apply pb-6 text-white pb-1 pt-3 md:px-6 text-center border-b-2 md:border-none 
+        hover:bg-blue-400 border-gray-100 md:text-blue-100 md:bg-transparent
+}
+
 .link {
   @apply text-white block p-3 font-bold hover:text-yellow-500
 }
