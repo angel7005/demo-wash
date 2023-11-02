@@ -20,7 +20,7 @@ const  TermineContract = () => {
 						grid grid-cols-3 gap-2 w-3/3 ">		  
 				<div className="text-center col-span-3"><Header/></div>
 				
-				<div className="flex col-span-3 mx-5 h-full items-center justify-end">
+				<div className="flex col-span-3 mx-5 mt-14 h-full items-center justify-end">
 					<div className="text-left">
 					<h1 className="text-header1 text-center py-2"> Terms of the warranty</h1>
 					 <lu>

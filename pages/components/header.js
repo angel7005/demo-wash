@@ -7,7 +7,7 @@ const  Header = () => {
     const [navbar, setNavbar] = useState(false);
 
 	return (		
-		<div className="bg-gray-600">
+		<div className="w-full bg-gray-900 fixed top-0 left-0 right-0 z-10">
 			<nav className="flex justify-between">
 				<div className="flex items-top">
 				 	<div className="logo p-2 items-center"> 
@@ -26,7 +26,7 @@ const  Header = () => {
 				
 				<div className="block flex justify-end " > 
 				<div className={`flex-1 justify-self-center  pb-3 mt-8 md:block md:pb-0 md:mt-0 ${ navbar ? 'p-12 md:p-0 block' : 'hidden' }` }>
-                         <ul className="h-screen items-center justify-center md:flex">
+                         <ul className="h-screen md:h-auto items-center justify-center md:flex">
                             <li className="menu_li">
                                 <Link href="/" onClick={() => setNavbar(!navbar)}>
                                     warranty
