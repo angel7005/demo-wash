@@ -11,13 +11,37 @@ const ExpiredNotice = () => {
   );
 };
 
-const ShowCounter = ({ days, hours, minutes, seconds }) => {
+const ShowCounter = ({ days='30', hours='59', minutes='59', seconds='59' }) => {
   return (
-       <p className="font-bold my-2
-          text-3xl text-blue-700">
-         {days.toString().padStart(2,'0')}:{hours.toString().
-            padStart(2,'0')}:{minutes.toString().padStart(2,'0')}:{seconds.toString().padStart(2,'0')}
-       </p>
+    <div className="flex justify-center items-center">
+      <div className="y-divide">
+           <p className="countdown">
+              {days.toString().padStart(2,'0')}    
+          </p>
+          <p>Days</p>
+      </div>
+      <p className="flex items-center text-2xl pb-5">:</p>
+      <div className="y-divide">        
+        <p className="countdown">
+            {hours.toString().padStart(2,'0')}
+        </p>
+          <p>hours</p>
+      </div>
+      <p className="flex items-center text-2xl pb-5">:</p>
+      <div className="y-divide">          
+          <p className="countdown">
+              {minutes.toString().padStart(2,'0')}
+          </p>
+          <p>minutes</p>
+      </div>
+      <p className="flex items-center text-2xl pb-5">:</p>
+      <div className="y-divide">        
+          <p className="countdown">
+              {seconds.toString().padStart(2,'0')}
+          </p>
+          <p>Seconds</p>
+      </div>
+    </div>
   );
 };
 
