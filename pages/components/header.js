@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {useState} from 'react';
 
-
 const  Header = () => {
     const [navbar, setNavbar] = useState(false);
 
@@ -10,7 +9,7 @@ const  Header = () => {
 		<div className="w-full bg-gray-900 fixed top-0 left-0 right-0 z-10">
 			<nav className="flex justify-between">
 				<div className="flex items-top">
-				 	<div className="logo p-2 items-center"> 
+				 	<div className="logo p-2 mt-1"> 
 						<Image src="/washing-repo.svg"
                         width={60} height={60} alt="logo" color="white"
                         className="flex items-top focus:border-none active:border-none mx-2"
@@ -25,8 +24,8 @@ const  Header = () => {
 				</div>
 				
 				<div className="block flex justify-end " > 
-				<div className={`flex-1 justify-self-center  pb-3 mt-8 md:block md:pb-0 md:mt-0 ${ navbar ? 'p-12 md:p-0 block' : 'hidden' }` }>
-                         <ul className="h-screen md:h-auto items-center justify-center md:flex">
+				    <div className={`flex flex-grow justify-self-center  pb-3 mt-8 md:block md:pb-0 md:mt-0 ${ navbar ? 'p-12 md:p-0 block' : 'hidden' }` }>
+                         <ul className="h-screen lg:h-auto md:h-auto items-center justify-center md:flex">
                             <li className="menu_li">
                                 <Link href="/" onClick={() => setNavbar(!navbar)}>
                                     warranty
@@ -45,7 +44,7 @@ const  Header = () => {
 						</ul>
                     </div>
                     		{/* HAMBURGER BUTTON FOR MOBILE */}
-                    <div className="md:hidden ">
+                       <div className="md:hidden ">
                       <button
                         className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400"
                         onClick={ () => {setNavbar(!navbar)} }
@@ -61,7 +60,7 @@ const  Header = () => {
                         }
                      </button>
                     </div>	
-                  </div>   			
+                </div>   			
 			</nav>					
 		</div>			
 	)

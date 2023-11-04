@@ -39,8 +39,12 @@ li.active {
 }
 
 .menu_li {
-  @apply pb-6 text-white pb-1 pt-3 md:px-6 text-center border-b-2 md:border-none 
-        hover:bg-blue-400 border-gray-100 md:text-blue-100 md:bg-transparent
+  @apply pb-6 text-xl text-white pb-1 pt-3 md:px-3 text-center border-b-2 md:border-none 
+        hover:bg-blue-400 border-blue-600 md:text-blue-100 md:bg-transparent
+}
+
+menu_li1 {
+  @apply pb-6 text-xl text-white pb-1 pt-3 md:px-3 text-center border-b-2 md:border-none         
 }
 
 .link {
@@ -87,7 +91,7 @@ li.active {
   @apply font-bold mt-2 px-2 text-3xl text-blue-700 bg-gray-800 rounded
 }
 
-ccc* {
+x* {
   outline: 1px solid red;
 }
 

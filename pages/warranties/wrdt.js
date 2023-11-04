@@ -6,7 +6,7 @@ import { CiTrash } from "react-icons/ci";
 
 import {WarrantyContext} from "./warranty_context";
 
-import Header from "../components/header.js"
+import Header from "../components/header/page"
 import Footer from "../components/footer.js"
 
 import Table from '../components/tables'
@@ -72,7 +72,7 @@ const  WarrantyTable = () => {
 					<Header/>
 				</div>					
 				
-				<div className="text-center col-span-3 h-full ">	
+				<div className="text-center col-span-3 h-full mt-14 ">	
 				 
 					<Table
 	    				table_head={<TableHead head_colums={['id','serial number','model','Date of sale', 'Days of warranty',]} />}
