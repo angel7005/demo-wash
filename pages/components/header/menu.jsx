@@ -27,7 +27,7 @@ export default function Menu(){
             <ul className="h-screen md:h-auto w-full items-center justify-end md:flex">
                     <li className="menu_li">
                         <Link href="/" onClick={() => setNavbar(!navbar)}>
-                            warranty
+                            Warranty Terms
                         </Link>
                     </li>	
                      <li className="menu_li">
@@ -37,9 +37,14 @@ export default function Menu(){
                     </li>	
                     <li className="menu_li">
                         <Link href="/warranties/warranty" onClick={() => setNavbar(!navbar)}>
-                            Admin
+                            Warranty
                         </Link>
-                    </li>			 	
+                    </li>	
+                    <li className="menu_li">
+                        <Link href="/users/userList" onClick={() => setNavbar(!navbar)}>
+                            Users
+                        </Link>
+                    </li>		 	
 			</ul>
         </div>
      </div>

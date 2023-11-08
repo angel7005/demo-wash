@@ -1,15 +1,18 @@
+import axios from 'axios';
 import {
     useState
 } from 'react';
 
-export default function UserForm () {
+
+
+export default function UserForm (props) {
+
     const [values, setValues] = useState({
         username: "", 
         movil:"", 
         address:"", 
         alias:"", 
-        password:"", 
-        role:"", 
+        password:"",         
         mail:""
     });
 
@@ -21,9 +24,51 @@ export default function UserForm () {
            });
     };
 
-    const handleSubmit = (event) => {
+
+    async function handleSubmit () {
         event.preventDefault();
-        console.log(values);
+        //setIsLoading(true)
+        let newUser = {}
+        axios.post('/api/users', {
+            username: values.username, 
+            movil: values.movil, 
+            address:values.address, 
+            alias: values.alias, 
+            password: values.password, 
+            role: "CUSTOMER", 
+            mail:values.mail,
+            avatar:'profile.png'
+        })
+        .then((res) => {        
+            newUser = res.data.response.user;       
+            props.setItems([...props.items,{
+                id: newUser.id,
+                username: newUser.username, 
+                movil: newUser.movil, 
+                address:newUser.address, 
+                alias: newUser.alias, 
+                password: newUser.password, 
+                role: newUser.role, 
+                mail: newUser.mail,
+                avatar: newUser.avatar
+            }])
+            if (typeof  props.setIsOpen !== 'undefined') {
+                props.setIsOpen(false) 
+            }
+
+            const ap = props.activePage;
+            const nap = Math.ceil((props.items.length+1)/props.pageSize);
+            if (nap>ap){
+                props.setActivePage(nap);
+            }
+          })
+        .catch((err) => {
+             console.log(err);
+             alert(err);
+          })
+          .finally(()=>{
+            
+          });                
     }
 
     return (
@@ -36,8 +81,7 @@ export default function UserForm () {
                <button
                     className="bg-transparent border-0 text-black float-right"
                     onClick={() => {
-                          setShowModal(false);
-                          changeFlag();
+                          props.setIsOpen(false);                          
                     }}>
                   <span className="text-black opacity-7 h-8 w-8 text-xl block bg-gray-300 py-0 
                   rounded-full">
@@ -83,13 +127,6 @@ export default function UserForm () {
                            onChange={handleInputChange}
                            className="ctlForm"
                     />
-                    <input name='role'  
-                           value={values.role} 
-                           type='text' 
-                           placeholder='Enter your role' 
-                           onChange={handleInputChange}
-                           className="ctlForm"
-                    />
                     <input name='mail'  
                         value={values.mail} 
                         type='email' 
@@ -107,8 +144,9 @@ export default function UserForm () {
                          rounded-md ring-2 hover:bg-red-100"
                     type="button"
                     onClick={() => { 
-                     // setShowModal(false);
-                     // changeFlag();
+                      if (typeof  props.setIsOpen !== 'undefined') {
+                           props.setIsOpen(false) 
+                       }                     
                     }}
                   >
                     Close
